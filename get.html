@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <input type="text"  id="id"   placeholder="id" >
-    <input type="text"  id="item" placeholder="item">
+    <input type="text" id="id" placeholder="id">
+    <input type="text" id="item" placeholder="item">
     <input type="text" id="name" placeholder="name">
-    <input type="text"  id="price" placeholder="price">
-    <input type="text"  id="rating" placeholder="rating">
-    <button  type="submit" onclick="submit()" >sumbit</button>
+    <input type="text" id="price" placeholder="price">
+    <input type="text" id="rating" placeholder="rating">
+    <button type="submit" onclick="submit()">sumbit</button>
     <script>
 
 
-let pro = [
+        let pro = [
             {
                 id: 1,
                 item: "elc",
@@ -38,7 +40,7 @@ let pro = [
                 price: 10490,
                 rating: 4.3,
             }
-          ,
+            ,
             {
                 id: 4,
                 item: "kichan",
@@ -71,7 +73,7 @@ let pro = [
                 rating: 3.9,
             }
             ,
-            
+
             {
                 id: 8,
                 item: "cleaing",
@@ -121,7 +123,7 @@ let pro = [
             }
             ,
             {
-                id: 14  ,
+                id: 14,
                 item: "PHONE",
                 name: "Apple iPhone 15 Pro (512 GB) - Natural Titanium",
                 price: 157900,
@@ -129,7 +131,7 @@ let pro = [
             }
             ,
             {
-                id: 15  ,
+                id: 15,
                 item: "PHONE",
                 name: "Redmi 12 (Moonstone Silver,6GB RAM, 128GB Storage",
                 price: 9990,
@@ -137,19 +139,19 @@ let pro = [
             }
             ,
             {
-                id: 16 ,
+                id: 16,
                 item: "PHONE",
                 name: "POCO C65 Pastel Blue 4GB RAM 128GB ROM",
                 price: 6790,
-                rating:3.9,
+                rating: 3.9,
             }
             ,
             {
-                id: 17 ,
+                id: 17,
                 item: "PHONE",
-                name: "(Refurbished) Oppo F23 5G (Cool Black, 8GB RAM, 256GB Storage) | 5000 mAh Battery with 67W SUPERVOOC Charger | 64MP Rear Triple AI Camera with Microlens | 6.72" ,
+                name: "(Refurbished) Oppo F23 5G (Cool Black, 8GB RAM, 256GB Storage) | 5000 mAh Battery with 67W SUPERVOOC Charger | 64MP Rear Triple AI Camera with Microlens | 6.72",
                 price: 22990,
-                rating:3.9,
+                rating: 3.9,
             }
             ,
             {
@@ -157,7 +159,7 @@ let pro = [
                 item: "PHONE",
                 name: "Oppo F25 Pro 5G (Ocean Blue, 8GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers",
                 price: 25990,
-                rating:4.0,
+                rating: 4.0,
             }
             ,
             {
@@ -165,16 +167,16 @@ let pro = [
                 item: "beg",
                 name: "Harissons Jake Gym Bag for Men & Women (Black Grey) | 31L Duffle Bag with Shoe Compartment & Detachable Shoulder Strap | 3-in-1 Versatile Travel Duffle Backpack with Quick Access Front Pocket",
                 price: 1499,
-                rating:4.3,
+                rating: 4.3,
             }
-            
+
             ,
             {
                 id: 20,
                 item: "haed phone",
                 name: "Logitech G733 Lightspeed Wireless Gaming Headset with Suspension Over Ear Headband, LIGHTSYNC RGB, Blue VO!CE mic Technology and PRO-G Audio Drivers - Black",
-                price:15990,
-                rating:4.3,
+                price: 15990,
+                rating: 4.3,
             }
             ,
             {
@@ -182,15 +184,15 @@ let pro = [
                 item: "mouse",
                 name: "HyperX Pulsefire Haste USB Gaming Mouse Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons",
                 price: 3500,
-                rating:4.0,
+                rating: 4.0,
             }
             ,
             {
                 id: 22,
                 item: "scoter",
                 name: "VIDA V1 Pro Electric Scooter Powered by Hero - 110 km Range in one Charge - Top Speed 80 kmph - Matte Abrax Orange",
-                price:159900,
-                rating:4.3,
+                price: 159900,
+                rating: 4.3,
             }
             ,
             {
@@ -198,7 +200,7 @@ let pro = [
                 item: "mouse",
                 name: "HyperX Pulsefire Haste USB Gaming Mouse Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons",
                 price: 3500,
-                rating:4.0,
+                rating: 4.0,
             }
             ,
             {
@@ -206,46 +208,64 @@ let pro = [
                 item: "mouse",
                 name: "HyperX Pulsefire Haste USB Gaming Mouse Ultra Lightweight, 59g, Hex Design, Honeycomb Shell, Hyperflex Cable, Up to 16000 DPI, 6 Programmable Buttons",
                 price: 3500,
-                rating:4.0,
+                rating: 4.0,
             }
             ,
             {
-                id: 24  ,
+                id: 24,
                 item: "bike",
                 name: "Gigaglitz Dirt Rocket Electric-Powered Dirt Bike with Rear-Wheel Drive, High-Torque, Chain-Driven Motor, for Kids 13+ (Black) - for Offroad Category and Purpose only",
                 price: 45000,
-                rating:5.0,
+                rating: 5.0,
             }
             ,
             {
-                id: 25  ,
+                id: 25,
                 item: "phone",
                 name: "realme NARZO N65 5G (Deep Green 6GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design | 120Hz Eye Comfort Display | 50MP AI Camera| Charger in The box",
                 price: 12999,
-                rating:4.6,
+                rating: 4.6,
             }
         ]
 
-console.log(pro);
+        console.log(pro);
 
         function submit() {
-            let id=document.getElementById("id").value;
-            let item=document.getElementById("item").value;
-            let name=document.getElementById("name").value;
-            let price=document.getElementById("price").value;
-            let rating=document.getElementById("rating").value;
-          
-            
-           
+            let id = document.getElementById("id").value;
+            let item = document.getElementById("item").value;
+            let name = document.getElementById("name").value;
+            let price = document.getElementById("price").value;
+            let rating = document.getElementById("rating").value;
+
+            let product = {
+                id: id,
+                item: item,
+                name: name,
+                price: price,
+                rating: rating,
+            };
+
+                    console.log(product);
+
+            pro.push(product);
+
+            console.log(pro);
+
+            localStorage.setItem("arr", JSON.stringify(pro));
+
+            let output =JSON.parse(localStorage.getItem("arr"));
+            console.log(output);
+
+
         }
-        submit()
-        console.log(submit);
-        console.log(id);
-            console.log(item);
-            console.log(name);
-            console.log(price);
-            console.log(rating);
+
+
+
+
+
+
 
     </script>
 </body>
+
 </html>
